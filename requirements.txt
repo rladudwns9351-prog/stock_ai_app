@@ -6,3 +6,4 @@ requests
 beautifulsoup4
 plotly
 feedparser
+python-dotenv
