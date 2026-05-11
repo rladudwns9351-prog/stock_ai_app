@@ -9,7 +9,7 @@ from urllib.parse import quote
 from datetime import datetime, date
 
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY"))
 
 st.set_page_config(layout="wide")
 st.title("📈 AI 주식 급등 분석 앱")
